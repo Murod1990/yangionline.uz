@@ -1,0 +1,113 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 5px auto;
+    padding: auto;
+}
+.savol
+{    text-align: left;
+     font-size: 20px; 
+     width: 100%; 
+     
+    }
+.sarlovha{
+    text-align: center;
+}
+
+.variant
+{
+    text-align: left;
+    font-size: 16px;
+    
+}
+
+@media screen and (max-width: 600px) {
+.variant
+{
+    text-align: left;
+    font-size: 12px;
+
+}
+.savol
+{
+padding-right: 5px;
+text-align: left;
+font-size: 18px;
+
+}
+    
+}
+.font-color{
+    background: linear-gradient(to bottom,#2980b9,#2c3e50);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  
+  .content{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+    padding: 5px ;
+    background-color: #24d7f731;
+    border: 2px solid #e6f7e6;
+    box-shadow: 6px 6px darkgray;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+
+}
+  
+  .timeDiv{
+    position: relative;
+  }
+  
+  #time{
+    text-shadow: 0 0 55px #2980b9;
+    font-size: 4.5rem;
+  }
+  
+  #med{
+    position:absolute;
+    top: 15px;
+    right: 0;
+  }
+  
+  .dayDiv{
+    display: flex;
+  }
+  
+  .dayDiv span{
+    font-size: 0.9rem;
+    opacity: 0.4;
+    margin:0 4px;
+  }
+
+  .variant{
+    text-align: left;
+  }
+  .variant:hover{
+    background-color:rgba(128, 255, 0, 0.274) ;
+    cursor: pointer;
+    display: block;
+    border-radius:25px ;
+    -webkit-border-radius:25px ;
+    -moz-border-radius:25px ;
+    -ms-border-radius:25px ;
+    -o-border-radius:25px ;
+}
+.tanla:hover{
+  cursor: pointer;
+  
+}
+ .forma{
+   border-radius: 15px;
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   -ms-border-radius: 15px;
+   -o-border-radius: 15px;
+   border-style: solid;
+   border-color: rgba(124, 57, 248, 0.274);
+   padding: 5px 5px 5px 5px;
+}
