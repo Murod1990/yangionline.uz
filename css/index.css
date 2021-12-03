@@ -9,5 +9,17 @@
     background: #fff
     url('/img/laoding.gif')
     no-repeat center center;
-    z-index: 99999;
+    z-index: 9;
+}
+.h {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    padding: 5px;
+    border-color: rgba(0, 0, 139, 0.459);
+    border: 2px;
+    color: rgb(255, 254, 254);
+    background-color: rgba(0, 0, 139, 0.575);
 }

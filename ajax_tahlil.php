@@ -1136,12 +1136,13 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
 
 <div class="container-fluid">
+
     <div class="row">
-       <h2 align='center' class="test" > Test natijalarini biling !!!</h2>
-        <div class="col-sm-6">
+    <div class="col-sm-6">
+     <button type="button" >Yangi test yechish</button> 
+ 
       <div class="javob">
-      
-  
+        
     <input type="submit"  class="colore" id="q" value="1">
     <input type="submit" class="colore" id="qw" value="2">
     <input type="submit" class="colore" id="qwe" value="3">
@@ -1163,22 +1164,41 @@
     <input type="submit" class="colore" id="q19" value="19">
     <input type="submit" class="colore" id="q20" value="20">
       
+<div class="row">
+   <div class="col-sm-3">
+   <?php
+   $foiz = 100;
+   $soni = 20 ;
+   $izoh = $foiz*$togri;
+   $natijai = round($izoh/$soni);
+   $natijaxato = $foiz - $natijai;
 
    
- 
-    <?php echo"<p class='togri'> To'g'ri javoblar soni : $togri </p> Xato javoblar soni : $xato";
+   echo"<p class='togri'>To'g'ri javob soni : $togri </p>
+    <p>Xato javob soni : $xato  </p>";
     ?>
+   </div>
+   <div class="col-sm-3">
+   <?php 
+   echo " <p class='foiz'> Foizda ko'rsatgichi xato javob $natijai %</p> ";
+   echo" <p class='foiz'> Foiz ko'rsatgichi to'g'ri javob $natijaxato % </p> "; 
+   ?>
 
+   </div>
+    </div>
+  
+ </div>
+ 
+ 
 
- </div> 
 <div class="succes">
    <?php   
    if($togri >= 15 )
    {
-      echo "<img src ='/img/succ.gif' class='rasm_togri' width='300' height='300' >";
+      echo "<img src ='/img/succ.gif' class='rasm_togri' width='250' height='250' >";
    }
    else{
-     echo "<img src ='/img/lose.gif' class='rasm_xato' width='300' height='300' >"; 
+     echo "<img src ='/img/lose.gif' class='rasm_xato' width='250' height='250' >"; 
    } 
    ?>
 </div>
@@ -1188,9 +1208,9 @@
 
         </div>
         
-        <div class="col-sm-6">
+        <div class="col-sm-6 mt-4 " >
            <!-- Savollarni chiqarish boshi -->
-      
+           
         <div class="savol">               
            <?php  echo " 1) $s"; ?>
         
