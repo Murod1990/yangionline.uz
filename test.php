@@ -12,7 +12,79 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easy-ticker/2.0.0/jquery.easy-ticker.min.js"> </script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="/js/taim.js"> </script>
+    
+    <script type="text/javascript" src="js/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+ 
+ <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      CommonHTML: {
+        styles: {
+           ".mjx-test.mjx-test-inline": {
+              display: "inline-table!important",
+              'margin-right': 0
+          },
+          ".mjx-test-inline .mjx-left-box": {
+              display: "table-cell!important",
+              width: "10000em!important",
+              "min-width": 0, "max-width": "none",
+              padding: 0, border: 0, margin: 0, float: null
+              
+          }
+        }
+      }
+    });
+  </script>
+  
+    
+ <script language="javascript">
+	var Seconds = 1800;
+	var Interval = null;
+	function StartTimer(){
+		Interval = window.setInterval('DownTime()',1000);
+		document.getElementById('TimerText').style.display = 'inline';
+	}
+	function DownTime(){
+		var ss = Seconds % 60;
+		if (ss<10){
+			ss='0' + ss + '';
+		}
+
+		var mm = Math.floor(Seconds / 60);
+
+		if (document.getElementById('Timer') == null){
+			return;
+		}
+
+		document.getElementById('TimerText').innerHTML = 'Qoldiq vaqt - ' + mm + ':' + ss;
+		if (Seconds < 1){
+			Ssubmit();
+			window.clearInterval(Interval);
+			TimeOver = true;
+			TimesUp();
+			
+		}
+		Seconds--;
+	}
+	function Ssubmit() {
+		$("form").submit();
+	}
+	
+</script>
+  
+  
+
+
+<script>
+var myVar = setInterval(myTimer, 1000);
+
+function myTimer() {
+  var d = new Date();
+  document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+</script>
+
+
+
     <link rel="icon" href="/img/icon.png">
     <link rel="stylesheet" href="/css/styletest.css">
 
@@ -20,7 +92,7 @@
 
 
 
-    
+
 
 </head>
 <body>
