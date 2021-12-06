@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    <title>Test sahifa</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keyworks" content = "Test javoblari ">
-    
-    <title>Test sahifa</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easy-ticker/2.0.0/jquery.easy-ticker.min.js"> </script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    
-    <script type="text/javascript" src="js/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+    <!-- Matematik belgilarni ishlatilish javascript qismi -->
+   <script type="text/javascript" src="js/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
  
  <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -34,8 +32,8 @@
       }
     });
   </script>
-  
-    
+      <!-- Matematik belgilarni ishlatilish javascript qismi oxiri -->  
+      <!-- Vaqtning oxiri --> 
  <script language="javascript">
 	var Seconds = 1800;
 	var Interval = null;
@@ -56,7 +54,7 @@
 		}
 
 		document.getElementById('TimerText').innerHTML = 'Qoldiq vaqt - ' + mm + ':' + ss;
-		if (Seconds < 1){
+		if (Seconds <1){
 			Ssubmit();
 			window.clearInterval(Interval);
 			TimeOver = true;
@@ -82,17 +80,11 @@ function myTimer() {
   document.getElementById("demo").innerHTML = d.toLocaleTimeString();
 }
 </script>
-
+<!-- Vaqtning oxiri --> 
 
 
     <link rel="icon" href="/img/icon.png">
     <link rel="stylesheet" href="/css/styletest.css">
-
-
-
-
-
-
 
 </head>
 <body>
@@ -125,10 +117,10 @@ function myTimer() {
                echo " 
                <div class='forma'>
                <div class = 'savol  '> $numer) ".$sav[1]."</div>
-               <label > <div  class='variant ' >  A) <input type='radio' class='tanla'    value='".$array["0"]."'   name =wj$e >  ".$array["0"]." </div></label>
-               <label>  <div  class='variant ' >  B) <input type='radio' class='tanla'   value='".$array["1"]."'    name =wj$e >  ".$array["1"]." </div></label>
-               <label><div   class ='variant '  >  C) <input type='radio' class='tanla'   value='".$array["2"]."'   name =wj$e >  ".$array["2"]." </div></label>
-               <label><div  class = 'variant ' >  D) <input type='radio' class='tanla'  value='".$array["3"]."'   name =wj$e >  ".$array["3"]." </div></label></br>
+               <label > <div  class='variant ' >   A) <input type='radio' class='tanla'    value='".$array["0"]."'   name =wj$e >  ".$array["0"]." </div></label>
+               <label>  <div  class='variant ' >   B) <input type='radio' class='tanla'   value='".$array["1"]."'    name =wj$e >  ".$array["1"]." </div></label>
+               <label><div   class ='variant '  >   C) <input type='radio' class='tanla'   value='".$array["2"]."'   name =wj$e >  ".$array["2"]." </div></label>
+               <label><div  class = 'variant ' >   D) <input type='radio' class='tanla'  value='".$array["3"]."'   name =wj$e >  ".$array["3"]." </div></label></br>
                <input type = 'hidden' name = tj$t id='tj' value = '".$sav[6]."'> 
                <input type = 'hidden' name = s$u id='tj' value = '".$sav[1]."'> </div> ";
 
@@ -165,22 +157,7 @@ function myTimer() {
          </div>
         <div class="col-sm-3">
         <div class="content">
-  <div class="timeDiv">
-    <span class="font-color" id="time"></span>
-    <span class="font-color" id="sec"></span>
-    <span class="font-color" id="med"></span>
-  </div>
-  <div class="dayDiv">
-    <span class="font-color day">Yak</span>
-    <span class="font-color day">Dush</span>
-    <span class="font-color day">Sesh</span>
-    <span class="font-color day">Chor</span>
-    <span class="font-color day">Pay</span>
-    <span class="font-color day">Jum</span>
-    <span class="font-color day">Shan</span>
-  </div>
-  <span class="font-color" id="full-date"></span>
-</div>
+ 
 
 
 
